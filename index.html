@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JBL STORE</title>
+
+    <link rel="icon" href="img/image.png">
+    <!--css-->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="shopping-cart-styles-tr.css">
+    <link rel="stylesheet" href="CSS/cart-popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="top_header">
+            <div class="container">
+                <a href="#" class="logo"><img src="img/image.png" alt=""></a>
+
+
+                <form action="" class="search_box">
+
+                    <div class="select_box">
+                        <select id="category" name="category">
+                            <option value="Tüm Kategoriler">Tüm Kategoriler</option>
+                            <option value="Hoparlörler">Hoparlörler</option>
+                            <option value="Ev Ses Sistemleri">Ev Ses Sistemleri</option>
+                            <option value="Kulaklıklar">Kulaklıklar</option>
+                            <option value="Kulakiçi Kulaklıklar">Kulakiçi Kulaklıklar</option>
+                            <option value="Gaming Ses Sistemleri">Gaming Ses Sistemleri</option>
+                            <option value="Araba ve Denizcilik">Araba ve Denizcilik</option>
+                            <option value="Profesyonel Ses Sistemleri">Profesyonel Ses Sistemleri</option>
+                        </select>
+                        
+                        
+                        
+                    </div>
+
+                    <input type="text" name="search" id="search" placeholder="Ürün Ara" required>
+
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    
+                </form>
+
+                <div class="header_icons">
+                    <div class="icon">
+                        <a href="#">
+                            <i class="fa-regular fa-heart"></i>
+                            <span class="count count_favourite">0</span>
+                        </a>
+                    </div>
+
+                    <div class="icon">
+                        <a href="#" class="cart-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="count count_item_header">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bottom_header">
+            <div class="container">
+                <nav class="nav">
+                    <div class="category_nav">
+                        <input type="checkbox" id="toggle_category" hidden>
+                        <label for="toggle_category" class="category_btn">
+                            <i class="fa-solid fa-bars"></i>
+                            <p>Kategorilere Göz At</p>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </label>
+
+                        <div class="category_nav_list">
+                            <a href="index.html#best10">En İyi 10 Ürün</a>
+                            <a href="index.html#best10">Tüm Kategoriler</a>
+                            <a href="#">Hoparlörler</a>
+                            <a href="#">Ev Ses Sistemleri</a>
+                            <a href="#">Kulaklıklar</a>
+                            <a href="#">Kulakiçi Kulaklıklar</a>
+                            <a href="#">Gaming Ses Sistemleri</a>
+                            <a href="#">Araba ve Denizcilik</a>
+                            <a href="#">Profesyonel Ses Sistemleri</a>
+                        </div>
+                    </div>
+
+                    <ul class="nav_links">
+                        <li class="active"><a href="#">Ana Sayfa</a></li>
+                        <li><a href="./hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="./aksesuarlar.html">Aksesuarlar</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./contact.html">İletişim</a></li>
+                    </ul>
+
+                </nav>
+                <div class="login_signup btns">
+                    <a href="#" class="btn">Giriş Yap <i class="fa-solid fa-right-to-bracket"></i></a>
+                    <a href="#" class="btn">Kayıt Ol <i class="fa-solid fa-user-plus"></i></a>
+                </div>
+
+
+            </div>
+
+        </div>
+    </header>
+    
+    <div class="slider">
+        <div class="container">
+            <!-- HERO BANNER -->
+            <div class="hero-banner">
+                <img src="img/accent-bg.webp" class="hero-bg" alt="JBL Banner">
+
+                <div class="hero-content">
+                    <h1>JBL ile Müziği Hisset</h1>
+                    <p>Güçlü ses, etkileyici tasarım ve üstün performansla müziği yeniden keşfet.</p>
+                    <a href="#" class="hero-btn">Şimdi Keşfet</a>
+                </div>
+
+                
+                <div class="hero-image">
+                    <img src="img/Charge5.webp" alt="JBL Product">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Öne çıkan ürünler -->
+    <div class="page-header">
+        <h1>Öne Çıkan Ürünler</h1>
+        <p>En çok tercih edilen JBL ürünleri.</p>
+    </div>
+
+    <section class="product-grid" id="best10">
+
+        <div class="product-card"
+            data-name="JBL Quantum Xbox Gaming Kulaklık"
+            data-price="3499"
+            data-image="img/jbl-xbox-headset.png">
+            <div class="product-img-box">
+                <img src="img/jbl-xbox-headset.png" alt="">
+            </div>
+            <h3>JBL Quantum Xbox Gaming Kulaklık</h3>
+            <p class="price">₺3.499</p>
+            <div class="action-area">
+                <button class="buy-btn">Sepete Ekle</button>
+            </div>
+        </div>
+        
+
+        <div class="product-card"
+            data-name="JBL Boombox Taşınabilir Hoparlör"
+            data-price="8999"
+            data-image="img/jbl-boombox.webp">
+            <div class="product-img-box">
+                <img src="img/jbl-boombox.webp" alt="">
+            </div>
+            <h3>JBL Boombox Taşınabilir Hoparlör</h3>
+            <p class="price">₺8.999</p>
+            <div class="action-area">
+                <button class="buy-btn">Sepete Ekle</button>
+            </div>
+        </div>
+
+        <div class="product-card"
+            data-name="JBL PartyBox Işıklı + Mikrofon"
+            data-price="12499"
+            data-image="img/jbl-partybox-mic.png">
+            <div class="product-img-box">
+                <img src="img/jbl-partybox-mic.png" alt="">
+            </div>
+            <h3>JBL PartyBox Işıklı + Mikrofon</h3>
+            <p class="price">₺12.499</p>
+            <div class="action-area">
+                <button class="buy-btn">Sepete Ekle</button>
+            </div>
+        </div>
+
+        <div class="product-card"
+            data-name="JBL True Wireless Spor Kulaklık"
+            data-price="2199"
+            data-image="img/jbl-true-wireless.png">
+            <div class="product-img-box">
+                <img src="img/jbl-true-wireless.png" alt="">
+            </div>
+            <h3>JBL True Wireless Spor Kulaklık</h3>
+            <p class="price">₺2.199</p>
+            <div class="action-area">
+                <button class="buy-btn">Sepete Ekle</button>
+            </div>
+        </div>
+
+        <div class="product-card"
+            data-name="JBL Flip Bluetooth Hoparlör"
+            data-price="2799"
+            data-image="img/jbl-flip.png">
+
+            <div class="product-img-box">
+                <img src="img/jbl-flip.png" alt="">
+            </div>
+            <h3>JBL Flip Bluetooth Hoparlör</h3>
+            <p class="price">₺2.799</p>
+            <div class="action-area">
+                <button class="buy-btn">Sepete Ekle</button>
+            </div>
+        </div>
+
+        <div class="product-card"
+            data-name="JBL Charge 5 Bluetooth Hoparlör"
+            data-price="3499"
+            data-image="img/jbl-charge.png">
+            <div class="product-img-box">
+                <img src="img/jbl-charge.png" alt="">
+                </div>
+            <h3>JBL Charge 5 Bluetooth Hoparlör</h3>
+            <p class="price">₺3.499</p>
+            <div class="action-area">
+                <button class="buy-btn">Sepete Ekle</button>
+            </div>
+        </div>
+
+        <div class="product-card"
+            data-name="JBL Kablosuz Mikrofon"
+            data-price="1199"
+            data-image="img/jbl-wireless-mic.png">
+            <div class="product-img-box">
+                <img src="img/jbl-wireless-mic.png" alt="">
+            </div>
+            <h3>JBL Kablosuz Mikrofon</h3>
+            <p class="price">₺1.199</p>
+            <div class="action-area">
+                <button class="buy-btn">Sepete Ekle</button>
+            </div>
+        </div>
+
+        <div class="product-card"
+            data-name="JBL Soundbar 2.1"
+            data-price="6999"
+            data-image="img/jbl-soundbar.png">
+            <div class="product-img-box">
+                <img src="img/jbl-soundbar.png" alt="">
+            </div>
+            <h3>JBL Soundbar 2.1</h3>
+            <p class="price">₺6.999</p>
+            <div class="action-area">
+                <button class="buy-btn">Sepete Ekle</button>
+            </div>
+        </div>
+
+        <div class="product-card"
+            data-name="JBL Endurance Peak Kulaklık"
+            data-price="1799"
+            data-image="img/jbl-endurance.png">
+            <div class="product-img-box">
+                <img src="img/jbl-endurance.png" alt="">
+            </div>
+            <h3>JBL Endurance Peak Kulaklık</h3>
+            <p class="price">₺1.799</p>
+            <div class="action-area">
+                <button class="buy-btn">Sepete Ekle</button>
+            </div>
+        </div>
+
+        <div class="product-card"
+            data-name="JBL PartyBox 1000 Profesyonel Hoparlör"
+            data-price="19999"
+            data-image="img/jbl-partybox1000.png">
+            <div class="product-img-box">
+                <img src="img/jbl-partybox1000.png" alt="">
+            </div>
+            <h3>JBL PartyBox 1000 Profesyonel Hoparlör</h3>
+            <p class="price">₺19.999</p>
+            <div class="action-area">
+                <button class="buy-btn">Sepete Ekle</button>
+            </div>
+        </div>
+    </section>
+    <div class="slider">
+        <div class="container">
+            <!-- 1. Bölüm -->
+            <div class="section-row">
+                <img src="img/photo-1561930661-20c9650e3e25.avif" class="section-img">
+
+                <div class="section-text">
+                    <h2>Yeni JBL Hoparlör Serisi</h2>
+                    <p>Güçlü ses, etkileyici tasarım ve üstün performans.</p>
+                    <div class="action-area">
+                        <button class="buy-btn">Sepete Ekle</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 2. Bölüm -->
+            <div class="section-row">
+                <div class="section-text">
+                    <h2>Her Detayda Üstün Kalite</h2>
+                    <p>Gelişmiş teknoloji ile kristal netliğinde ses deneyimi.</p>
+                    
+                        <button class="buy-btn">Sepete Ekle</button>
+                    
+                </div>
+
+                <img src="img/photo-1596628319258-c6f3f387a1ed.avif" class="section-img">
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container footer-content">
+
+            <div class="footer-col">
+                <h3>JBL STORE</h3>
+                <p>Güçlü ses, etkileyici tasarım ve üstün performans.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Kategoriler</h4>
+                <ul>
+                    <li><a href="#">Hoparlörler</a></li>
+                    <li><a href="#">Kulaklıklar</a></li>
+                    <li><a href="#">Aksesuarlar</a></li>
+                    <li><a href="#">Gaming</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Sayfalar</h4>
+                <ul>
+                    <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">İletişim</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Bizi Takip Edin</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 JBL STORE - Tüm Hakları Saklıdır
+        </div>
+    </footer>
+    <script src="js/shopping-cart-tr.js"></script>
+    <script src="js/cart-popup.js"></script>
+
+</body>
+</html>
